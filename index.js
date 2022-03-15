@@ -2,7 +2,7 @@ const schedule = require('node-schedule');
 const axios = require('axios');
 const rule = new schedule.RecurrenceRule();
 rule.hour = 19;
-rule.minute = 19;
+rule.minute = 25;
 rule.tz = 'Asia/Phnom_Penh';
 var j = schedule.scheduleJob(rule, function(fireDate){
     console.log('running job!');
